@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5% ;               
+}
+
+body{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.title{
+    border-bottom: 2px solid lightgray;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+.container{    
+    margin: 0 auto;
+    max-width: 85vw;
+    margin: 1rem auto;    
+}
+
+.prod-change{
+    
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.829);
+    padding: 1.4rem
+}
+
+.green{
+    background-color: rgb(37, 136, 95);
+}
+
+.blue{
+    background-color: rgb(77, 110, 172);
+}
+
+.hide{
+    display: none;
+}
+
+.main{
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+
+    flex: 0 0 27%;
+    align-self: start;
+}
+
+.content{
+    flex: 0 0 70%;
+}
+
+.form-title{
+    padding: 1.5rem 1rem;
+    background-color: rgb(236, 232, 232);
+    
+}
+
+.form-title h3{
+    font-size: 2.2rem;
+}
+
+.form-main{
+    padding: 1.5rem;
+}
+
+.input-box{
+    border: 1px solid rgb(235,231,231);
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+}
+
+input{
+    /* border-color: rgb(235, 231, 231); */
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;    
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(180, 177, 177);
+}
+
+.btn{
+    border-radius: 100px;
+    border: none;
+    background-color: lightseagreen;
+    color: #fff;
+    padding: 0.9rem 0;
+    width: 100%;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.prod-content{
+    padding: 1.5rem 5rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-prod{
+    background-color: rgb(199, 93, 93);
+    border: none;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
+    color: #fff;
+}
+
+.btn-prod:hover{
+    cursor: pointer;
+}
+
+.btn-prod:focus{
+    outline: none;
+}
+
+.btn-prod:active{
+    transform: translateY(2px);
+}
