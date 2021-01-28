@@ -5,6 +5,7 @@ const btn         = document.querySelector( '.btn' );
 const inputs      = document.querySelectorAll( 'input' );
 const divContent  = document.querySelector('.content');
 const divAviso    = document.querySelector('.prod-change');
+const pAviso      = document.querySelector('#prod-p');
 
 
 export const agregarHTML = ({ name, price, year, id }, noCargaNueva=true)=>{
@@ -28,7 +29,7 @@ const manejoDivAviso = ( bool )=>{
     const set =( clase, mensaje )=>{
         
         divAviso.classList.add( clase )
-        divAviso.childNodes[1].innerText = mensaje;
+        pAviso.innerText = mensaje;
         divAviso.classList.toggle( 'hide' );
 
         setTimeout(() => {
