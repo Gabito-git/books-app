@@ -51,11 +51,10 @@ btn.addEventListener( 'click', event => {
 
     event.preventDefault()       
     const inputValues = ( Array.from( inputs ) ).map( input => input.value ); 
-    const [ name, price, year  ] = inputValues;
     
     if(inputValues.find( value => value === "" ) !== ""){
         inputs.forEach( input => input.value = '' );    
-        const book = new Book( name, price, year );          
+        const book = new Book( ...inputValues );          
         listaLibros.agregarLibro( book );
         agregarHTML( book );
     }    
