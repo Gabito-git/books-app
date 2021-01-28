@@ -32,7 +32,9 @@ export class BookList{
         
         this.bookList = localStorage.getItem('books') ?
             JSON.parse(localStorage.getItem('books')) :
-            [];         
+            []; 
+            
+        this.bookList = this.bookList.map( Book.fromJSON );
 
     }
 
