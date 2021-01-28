@@ -30,8 +30,8 @@ export class BookList{
 
     cargarLocalStorage(){   
         
-        localStorage.getItem('books') ?
-            this.bookList = JSON.parse(localStorage.getItem('books')) :
+        this.bookList = localStorage.getItem('books') ?
+            JSON.parse(localStorage.getItem('books')) :
             [];         
 
     }
